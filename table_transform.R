@@ -39,6 +39,7 @@ for (val in areas){  # удаляем повторяющиеся слова вн
 
 # rm(list = c("tmp", "cols", "areas", "colors_tmp", "color", "val", "cluster"))
 
+write.csv(out, "./export.csv", row.names = F)
 
 
 # Часть вторая ------------------------------------------------------------
@@ -96,4 +97,3 @@ for (val in areas){
   ggsave(paste0(val, ".png"), width = 2000, height = 1500, units = "px", dpi = 180)
 }
 
-p
